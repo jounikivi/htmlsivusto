@@ -230,15 +230,6 @@ section {
     opacity: .8;
 }
 
-/* Tietoja tyyli */
 
-.tietoja{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: var(--second-bg-color);
-}
 
-/* tietoja tyyli loppi */
+ 
