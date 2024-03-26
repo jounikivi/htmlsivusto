@@ -34,6 +34,16 @@ body{
     color: var(--text-color);
 }
 
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  span {
+    color: var(--main-color);
+  }
+
 .header{
     position: fixed;
     top: 0;
