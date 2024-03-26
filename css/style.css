@@ -460,6 +460,10 @@ section{
     background: var(--main-color);
   }
 
+  .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 90%;
+  }
+
 
 
 
