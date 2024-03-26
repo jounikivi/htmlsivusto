@@ -1,63 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jouni Kiviperä</title>
+    <title>Complete Responsive Personal Portfolio Website HTML CSS Javascript | Codehal</title>
 
     <link rel="stylesheet" href="css/style.css">
+
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">Teksti</a>
+        <a href="#" class="logo">Nimi</a>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="bx-bx-menu" id="menu-icon"></div>
 
         <nav class="navbar">
-            <a href="koti" class="active">koti</a>
-            <a href="tietoja.html">tietoja</a>
-            <a href="#koulutus">placeholder</a>
-            <a href="#työ">placeholder</a>
-            <a href="#taidot">placeholder</a>
+            <a href="#home" class="active">Koti</a>
+            <a href="#about">Tietoja</a>
+            <a href="#education">Koulutus</a>
+            <a href="#skills">Taidot</a>
+            <a href="#contact">yhteys</a>
         </nav>
     </header>
-
     <!-- home section design -->
-    <section class="koti" id="koti">
-        <div class="koti-content">
-            <h1>Hi <span>placeholder</span></h1>
-            <div class="text-ani">
-                <h3>Otsikko1</h3>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi olen <span>Jouni Kiviperä</span></h1>
+            <div class="text-animate">
+                <h3>Otsikko 1</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus harum consequuntur totam laboriosam exercitationem debitis, porro consequatur
-            cupiditate vel, numquam dolores, voluptas iste minus quo. Beatae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quos amet hic exercitationem accusantium commodi eius autem tenetur soluta aliquid, neque asperiores ex temporibus at laborum officia, nam, optio excepturi!</p>
 
             <div class="btn-box">
                 <a href="#" class="btn">nappi</a>
-                <a href="" class="btn">nappi2</a>
+                <a href="#" class="btn">nappi2</a>
             </div>
         </div>
-
         <div class="koti-sci">
             <a href="#"><i class='bx bxl-facebook'></i></a>
             <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/jounikivi"><i class='bx bxl-github'></i></a>
         </div>
-
         <div class="koti-imghover"></div>
     </section>
-    
+
     <!-- about section design -->
+    <section class="about" id="about">
+        <h2 class="heading">Tietoja <span>Minusta</span></h2>
+        <div class="about-img">
+            <img src="images/about.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Otsikko2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique facilis aperiam accusantium ea minima eius veritatis magni, debitis, dignissimos vitae praesentium enim. Minima reiciendis, consequuntur aspernatur explicabo deserunt magnam adipisci maxime? Reiciendis quam accusamus excepturi laudantium inventore! Dolores quisquam voluptatem, fugiat itaque accusantium molestiae et est, labore, minima ullam praesentium illum quae provident a facere distinctio perspiciatis quam. Asperiores sapiente deserunt omnis, et rerum natus!</p>
+
+            <div class="btn-box btns">
+                <a href="#" class="btn">nappi3</a>
+            </div>
+        </div>
+    </section>
 
     <!-- education section design -->
+
+    <section class="education" id="education">
+        <h2 class="heading">Minun <span>Koulutukseni</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Opiskelu</h3>
+                
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2024 - 2024</div>
+                            <h3>Koulutus1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti eveniet ad delectus esse libero minus inventore labore fugit nesciunt! Asperiores tempore maxime maiores ipsum accusantium at.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2024 - 2024</div>
+                            <h3>Koulutus2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti eveniet ad delectus esse libero minus inventore labore fugit nesciunt! Asperiores tempore maxime maiores ipsum accusantium at.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2024 - 2024</div>
+                            <h3>Koulutus3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti eveniet ad delectus esse libero minus inventore labore fugit nesciunt! Asperiores tempore maxime maiores ipsum accusantium at.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">TyöHistoria</h3>
+                
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2024 - 2024</div>
+                            <h3>Työ1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti eveniet ad delectus esse libero minus inventore labore fugit nesciunt! Asperiores tempore maxime maiores ipsum accusantium at.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2024 - 2024</div>
+                            <h3>Työ2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti eveniet ad delectus esse libero minus inventore labore fugit nesciunt! Asperiores tempore maxime maiores ipsum accusantium at.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2024 - 2024</div>
+                            <h3>Työ3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti eveniet ad delectus esse libero minus inventore labore fugit nesciunt! Asperiores tempore maxime maiores ipsum accusantium at.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+
 
     <!-- skills section design -->
 
