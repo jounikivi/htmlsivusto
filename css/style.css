@@ -638,39 +638,3 @@ section{
   color: var(--text-color);
 }
 
-/* Media queryt mobiililaitteille */
-@media screen and (max-width: 768px) {
-  /* Lisää tyylimäärittelyjä mobiililaitteille */
-  .header {
-    padding: 1rem;
-  }
-
-  .skills-column {
-    flex: 1 1 100%;
-  }
-}
-
-/* Media queryt pienille mobiililaitteille */
-@media screen and (max-width: 480px) {
-  /* Lisää tyylimäärittelyjä pienille mobiililaitteille */
-}
-
-/* Joustavat koot */
-.header {
-  padding: 2rem;
-}
-
-.about-img img {
-  max-width: 100%;
-  height: auto;
-}
-
-.skills-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.skills-column {
-  flex: 1 1 40%;
-}
