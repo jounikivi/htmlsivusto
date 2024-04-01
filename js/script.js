@@ -1,30 +1,33 @@
-// Lisää JavaScript-koodi, joka mahdollistaa responsiivisen toiminnallisuuden
+// toggle icon navbar
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-// Hae valikko-elementti
-const menuIcon = document.getElementById('menu-icon');
-const navbar = document.querySelector('.navbar');
 
-// Lisää kuuntelija valikko-kuvakkeelle
-menuIcon.addEventListener('click', () => {
-  // Lisää tai poista 'active' -luokka valikosta
-  navbar.classList.toggle('active');
-});
+// scroll sections
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-// Lisää kuuntelija navigaatioelementeille
-const navLinks = document.querySelectorAll('.navbar a');
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    // Poista 'active' -luokka valikosta, kun linkkiä klikataan pienillä näytöillä
-    if (window.innerWidth <= 768) {
-      navbar.classList.remove('active');
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 100;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+
+    if(top >= offset && top < offset + height){
+      navLinks.forEach(links => {
+        links.classList.remove('active');
+        document.querySelector('header nav a[href*=' + id + ']'.classList.add('active'));
+      })
     }
-  });
-});
+  })
 
-// Lisää kuuntelija ikkunan leveydelle muutoksille
-window.addEventListener('resize', () => {
-  // Poista 'active' -luokka valikosta, jos ikkunan leveys ylittää 768 pikseliä
-  if (window.innerWidth > 768) {
-    navbar.classList.remove('active');
-  }
-});
+  // sticky header
+
+  let header = document.querySelector('header')
+  
+  header.classList.toggle('sticky', window.scrollY > 100);
+  // remove toggle icon and navbar when click navbar links (scroll)
+  // animation footer on scroll
+
+}
