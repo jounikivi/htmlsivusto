@@ -618,7 +618,9 @@ section{
 
 
 @media screen and (max-width: 768px){
-  .contact .input-box {
+  .contact .input-box {/
     width: 100%;
   }
 }*/
+
+
