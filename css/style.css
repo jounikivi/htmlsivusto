@@ -1,6 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Stardos+Stencil:wght@400;700&display=swap');
 
 * {
@@ -12,9 +9,6 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: "Newsreader", serif;
-    /*font-family: "Stardos Stencil", system-ui;*/
-    /*font-family: "Metal Mania", system-ui;*/
-    /*font-family: 'Poppins', sans-serif;*/
 }
 
 :root{
@@ -108,14 +102,30 @@ section{
 }
 
 .home-content .text-animate h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);
-    background-image: linear-gradient(var(--main-color));
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-position: 0 0;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: .7px var(--main-color);
+  background-image: linear-gradient(var(--main-color), var(--main-color));
+  background-repeat: no-repeat;
+	background-clip: text;
+	-webkit-background-clip: text;
+  background-position: -33rem 0;
+  animation: homeBgText 6s linear infinite;
+  animation-delay: 2s;
+}
+
+.home-content .text-animate h3::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 2px solid var(--main-color);
+  z-index: -1;
+  animation: homeCursorText 6s linear infinite;
+  animation-delay: 2s;
 }
 
 
@@ -298,6 +308,7 @@ section{
     border-bottom: .2rem solid var(--second-bg-color);
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
+    animation: aboutSpinner 10s linear infinite;
   }
 
   .about-content{
@@ -719,4 +730,30 @@ section{
     margin: 3rem 0;
   }
 }
+ @keyframes homeBgText {
+  0%, 10%,100% {
+    background-position: -33rem 0;
+  }
+  65%, 85% {
+    background-position: 0 0;
+  }
+ }
 
+ @keyframes homeCursorText {
+  0%, 10%,100% {
+    width: 0;
+  }
+  65%, 78%, 85% {
+    width: 100%;
+    opacity: 1;
+  }
+  75%, 81% {
+    opacity: 0;
+  }
+ }
+
+ @keyframes aboutSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+ }
