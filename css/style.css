@@ -718,6 +718,13 @@ section{
     display: block;
   }
 
+  @media (max-width: 600px) {
+    #menu-icon {
+      display: block;
+    }
+  }
+  
+
   .navbar{
     position: absolute;
     top: 100%;
