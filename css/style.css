@@ -321,7 +321,7 @@ span {
 
 /* Sisällön tyyli */
 .about-content{
-  text-align: center;
+  text-align: left;
 }
 
 /* Otsikon tyyli */
@@ -330,10 +330,16 @@ span {
 }
 
 /* Tekstin tyyli */
-.about-content p{
-  font-size: 1.6rem;
+/*.about-content p{
+  /*font-size: 1.6rem;
   margin: 2rem 0 3rem;
+}*/
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 20px 0 30px; /* Määritä ylä-, ala- ja sivumarginaalit */
 }
+
 
 /* Napin tyyli */
 .btn-box.btns{
