@@ -30,54 +30,57 @@ body{
 }
 
 /* Otsikon tyyli */
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem;
-  background-color: transparent;
+  padding: 1rem;
+  background-color: #fff; /* Muutettu taustaväriä näkyvämmäksi */
   display: flex;
+  align-items: center; /* Keskitetty vertikaalisesti */
   justify-content: space-between;
   z-index: 100;
-  transition: .3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lisätty varjo efekti */
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 /* Sticky header tyyli */
-.sticky {
+.header.sticky {
   position: fixed;
-  top: 0;
-  width: 100%;
+  background-color: #fff; /* Varmista taustaväri myös sticky-tilassa */
 }
 
 /* Logo-tyyli */
-.logo{
-  font-size: 2.5rem;
-  color: var(--text-color);
+.logo {
+  font-size: 2rem; /* Pienennetty fonttikokoa */
+  color: #333; /* Musta teksti näkyvämmäksi */
   font-weight: 600;
 }
 
 /* Navigointilinkkien tyyli */
 .navbar a {
-  font-size: 1.7rem;
-  color: var(--text-color);
+  font-size: 1.5rem; /* Pienennetty fonttikokoa */
+  color: #666; /* Vaaleanharmaa väri */
   font-weight: 500;
-  margin-left: 3.5rem;
-  transform: .3s;
+  margin: 0 1.5rem; /* Pienennetty marginaalia */
+  text-decoration: none; /* Poistettu linkkien alleviivaus */
+  transition: color 0.3s;
 }
 
 /* Navigointilinkkien tyyli hover-tilassa ja aktiivisena */
 .navbar a:hover, .navbar a.active {
-  color: var(--main-color);
+  color: #333; /* Vaihdettu väri tummemmaksi */
 }
 
 /* Valikkopainikkeen tyyli */
-#menu-icon{
-  font-size: 3.6rem;
-  color: var(--text-color);
+.menu-icon {
+  font-size: 2rem; /* Pienennetty fonttikokoa */
+  color: #333; /* Musta väri */
   cursor: pointer;
   display: none; /* Piilotettu oletusarvoisesti */
 }
+
 /* Responsiivinen muotoilu */
 @media (max-width: 768px) {
   .menu-icon {
