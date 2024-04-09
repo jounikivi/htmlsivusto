@@ -1,15 +1,21 @@
 // toggle icon navbar
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
+/*menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('bx-x'); // Vaihtaa navbarin luokkaa klikkauksen yhteydessä
   menuIcon.classList.toggle('active'); // Vaihtaa menu-ikonin luokkaa klikkauksen yhteydessä
-}
+})*/
+
+menuIcon.addEventListener('click', () => {
+  navbar.classList.toggle('show'); // Vaihtaa navbarin luokkaa klikkauksen yhteydessä
+  menuIcon.classList.toggle('active'); // Vaihtaa menu-ikonin luokkaa klikkauksen yhteydessä
+})
+
 
 // scroll sections
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
   sections.forEach(sec => {
@@ -27,6 +33,6 @@ window.onscroll = () => {
   })
 
   // sticky header
-  let header = document.querySelector('header')
+  const header = document.querySelector('header')
   header.classList.toggle('sticky', window.scrollY > 100); // Lisää tai poistaa sticky-luokan headerista riippuen vierityksen sijainnista
 }
