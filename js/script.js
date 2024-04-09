@@ -2,10 +2,15 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
+/*menuIcon.onclick = () => {
   navbar.classList.toggle('bx-x'); // Vaihtaa navbarin luokkaa klikkauksen yhteydessä
   menuIcon.classList.toggle('active'); // Vaihtaa menu-ikonin luokkaa klikkauksen yhteydessä
-}
+}*/
+
+menuIcon.addEventListener('click', () => {
+  navbar.classList.toggle('show'); // Vaihtaa navbarin luokkaa klikkauksen yhteydessä
+  menuIcon.classList.toggle('active'); // Vaihtaa menu-ikonin luokkaa klikkauksen yhteydessä
+})
 
 // scroll sections
 let sections = document.querySelectorAll('section');

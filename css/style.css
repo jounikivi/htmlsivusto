@@ -79,6 +79,23 @@ body{
   display: none; /* Piilotettu oletusarvoisesti */
 }
 
+/* Navigointipalkin tyyli kun .show-luokka on aktiivinen */
+.navbar.show {
+  display: block; /* Näytetään navigointipalkki */
+}
+
+
+/* Valikkopainikkeen tyyli pienillä näytöillä */
+@media screen and (max-width: 768px) {
+  #menu-icon {
+    display: block; /* Näytetään valikkopainike */
+  }
+
+  .navbar {
+    display: none; /* Piilotetaan navigointipalkki */
+  }
+}
+
 
 /* Kotiosion tyyli */
 section{
