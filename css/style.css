@@ -548,7 +548,7 @@ span {
 
 /* Ohjelmointi taidot palkki tyyli */
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
-  width: 78%;
+  width: 65%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
