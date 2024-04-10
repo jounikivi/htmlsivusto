@@ -1,54 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tervetuloa sivustolle!</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
+    <style>
+        /* Tässä on CSS-koodi, jonka lähetit */
+        /* Lisää animaatiot tähän */
+        .animated {
+            animation: fadeIn 2s ease-in-out;
+        }
 
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+    </style>
+</head>
 <body>
-    <header class="header sticky">
-        <a href="#" class="logo" alt="Jounin logo">Jouni <span class="animate" style="--i:1;"></span></a>
-    
-        <button id="menu-icon" aria-label="Avaa valikko">
-            <span class="bx bx-menu"></span>
-        </button>
-    
-        <nav class="navbar">
-            <a href="landing.html">Landing Page</a> <!-- Uusi linkki landing page -sivulle -->
-            <a href="#home" class="active">Koti</a>
-            <a href="#about">Tietoja</a>
-            <a href="#education">Tausta</a>
-            <a href="#skills">Taidot</a>
-            <a href="#contact">Yhteys</a>
-        </nav>
-    </header>
-    <!--Otsikkosuunnittelun lopuu-->
-    
-    
-        <!-- Koti osio -->
-    <section class="home" id="home">
-        <div class="home-content">
+    <section class="home">
+        <div class="home-content animated">
             <h1>Tervetuloa sivustolle!</h1>
-            <div class="text-animate">
-                <h3>Olemme iloisia nähdessämme sinut täällä!</h3>
-            </div>
-            <p>Tämä on Jouni Kiviperän henkilökohtainen sivusto. Täältä löydät tietoa minusta, taustastani ja taidoistani. Ota yhteyttä, jos sinulla on kysyttävää tai haluat keskustella mahdollisista yhteistyömahdollisuuksista.</p>
-    
-            <div class="btn-box">
-                <a href="#about" class="btn">Tietoja minusta</a>
-                <a href="#contact" class="btn">Ota yhteyttä</a>
-            </div>
+            <p>Tämä on paikka, jossa voit tutustua meihin ja palveluihimme. Toivomme, että viihdyt!</p>
+            <button onclick="location.href='sivusto.html'">Siirry sivustolle</button>
         </div>
-        <div class="koti-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/jounikivi"><i class='bx bxl-github'></i></a>
-        </div>
+    </section>
 </body>
 </html>
