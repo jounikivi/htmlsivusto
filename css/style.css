@@ -24,10 +24,21 @@ html{
     color: var(--text-color);
 }
 
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; 
+  }
+}
+
+
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
+    line-height: 1.5;
+    sfont-size: 16px; 
 }
+
 
 /* Otsikon tyyli */
 .header{
